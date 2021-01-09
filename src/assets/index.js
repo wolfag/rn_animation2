@@ -1,0 +1,28 @@
+const Images = {
+  img1: require('./images/1.jpg'),
+  img2: require('./images/2.jpg'),
+  img3: require('./images/3.jpg'),
+  img4: require('./images/4.jpg'),
+  img5: require('./images/5.jpg'),
+  img6: require('./images/6.jpg'),
+  img7: require('./images/7.jpg'),
+  img8: require('./images/8.jpg'),
+  img9: require('./images/9.jpg'),
+  img10: require('./images/10.jpg'),
+  img11: require('./images/11.jpg'),
+  img12: require('./images/12.jpg'),
+  img13: require('./images/13.jpg'),
+  img14: require('./images/14.jpg'),
+  img15: require('./images/15.jpg'),
+  img16: require('./images/16.jpg'),
+  img17: require('./images/17.jpg'),
+  img18: require('./images/18.jpg'),
+  img19: require('./images/19.jpg'),
+  img20: require('./images/20.jpg'),
+  img21: require('./images/21.jpg'),
+  img22: require('./images/22.jpg'),
+  img23: require('./images/23.jpg'),
+  img24: require('./images/24.jpg'),
+};
+
+export default Images;
