@@ -81,7 +81,8 @@ export default function Tabbar2() {
             borderRadius: HEIGHT_TABBAR / 2,
             transform: [{scaleX}],
           }}>
-          <Animated.View style={{opacity, transform: [{scale: scale2}]}}>
+          <Animated.View
+            style={{opacity: opacity2, transform: [{scale: scale2}]}}>
             <FontAwesome name="heart" color="#fff" size={ICON_SIZE} />
           </Animated.View>
           <Animated.View
