@@ -54,7 +54,7 @@ const RootNav = () => {
         <Stack.Screen name="AnimationCard2" component={AnimationCard2} />
         <Stack.Screen name="AnimationTab1" component={AnimationTab1} />
         <Stack.Screen name="AnimationTab2" component={AnimationTab2} />
-        <Stack.Screen name="GetCard" component={AnimationGetCard} />
+        <Stack.Screen name="AnimationGetCard" component={AnimationGetCard} />
       </Stack.Navigator>
     </NavigationContainer>
   );
