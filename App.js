@@ -14,10 +14,12 @@ import {Button, ScrollView} from 'react-native';
 import Card2 from './src/components/Card2';
 import Tabbar1 from './src/components/tabbar1';
 import Tabbar2 from './src/components/tabbar2';
+import GetCard from './src/components/GetCard';
 
 const AnimationCard2 = () => <Card2 />;
 const AnimationTab1 = () => <Tabbar1 />;
 const AnimationTab2 = () => <Tabbar2 />;
+const AnimationGetCard = () => <GetCard />;
 
 const Home = ({navigation}) => {
   return (
@@ -34,6 +36,10 @@ const Home = ({navigation}) => {
         title="Tab2"
         onPress={() => navigation.navigate('AnimationTab2')}
       />
+      <Button
+        title="GetCard"
+        onPress={() => navigation.navigate('AnimationGetCard')}
+      />
     </ScrollView>
   );
 };
@@ -48,6 +54,7 @@ const RootNav = () => {
         <Stack.Screen name="AnimationCard2" component={AnimationCard2} />
         <Stack.Screen name="AnimationTab1" component={AnimationTab1} />
         <Stack.Screen name="AnimationTab2" component={AnimationTab2} />
+        <Stack.Screen name="GetCard" component={AnimationGetCard} />
       </Stack.Navigator>
     </NavigationContainer>
   );
