@@ -7,28 +7,39 @@
  */
 
 import React from 'react';
-import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import Card2 from './src/components/Card2';
+import {Button, ScrollView} from 'react-native';
 
-const Home = () => {
+const AnimationCard2 = () => <Card2 />;
+
+const Home = ({navigation}) => {
   return (
-    <View>
-      <Text>hom</Text>
-    </View>
+    <ScrollView>
+      <Button
+        title="Card2"
+        onPress={() => navigation.navigate('AnimationCard2')}
+      />
+    </ScrollView>
   );
 };
 
 const Stack = createStackNavigator();
 
-const App = () => {
+const RootNav = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="AnimationCard2" component={AnimationCard2} />
       </Stack.Navigator>
     </NavigationContainer>
   );
+};
+
+const App = () => {
+  return <RootNav />;
 };
 
 export default App;
