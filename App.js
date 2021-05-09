@@ -15,6 +15,7 @@ import Card2 from './src/components/Card2';
 import Tabbar1 from './src/components/tabbar1';
 import Tabbar2 from './src/components/tabbar2';
 import GetCard from './src/components/GetCard';
+import Shape from './src/components/Shape';
 
 const AnimationCard2 = () => <Card2 />;
 const AnimationTab1 = () => <Tabbar1 />;
@@ -40,6 +41,10 @@ const Home = ({navigation}) => {
         title="GetCard"
         onPress={() => navigation.navigate('AnimationGetCard')}
       />
+      <Button
+        title="Shape"
+        onPress={() => navigation.navigate('Shape')}
+      />
     </ScrollView>
   );
 };
@@ -54,7 +59,7 @@ const RootNav = () => {
         <Stack.Screen name="AnimationCard2" component={AnimationCard2} />
         <Stack.Screen name="AnimationTab1" component={AnimationTab1} />
         <Stack.Screen name="AnimationTab2" component={AnimationTab2} />
-        <Stack.Screen name="AnimationGetCard" component={AnimationGetCard} />
+        <Stack.Screen name="Shape" component={Shape} />
       </Stack.Navigator>
     </NavigationContainer>
   );
