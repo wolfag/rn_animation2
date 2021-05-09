@@ -16,6 +16,7 @@ import Tabbar1 from './src/components/tabbar1';
 import Tabbar2 from './src/components/tabbar2';
 import GetCard from './src/components/GetCard';
 import Shape from './src/components/Shape';
+import FacebookReaction from './src/components/FacebookReaction';
 
 const AnimationCard2 = () => <Card2 />;
 const AnimationTab1 = () => <Tabbar1 />;
@@ -41,9 +42,10 @@ const Home = ({navigation}) => {
         title="GetCard"
         onPress={() => navigation.navigate('AnimationGetCard')}
       />
+      <Button title="Shape" onPress={() => navigation.navigate('Shape')} />
       <Button
-        title="Shape"
-        onPress={() => navigation.navigate('Shape')}
+        title="FacebookReaction"
+        onPress={() => navigation.navigate('FacebookReaction')}
       />
     </ScrollView>
   );
@@ -60,6 +62,7 @@ const RootNav = () => {
         <Stack.Screen name="AnimationTab1" component={AnimationTab1} />
         <Stack.Screen name="AnimationTab2" component={AnimationTab2} />
         <Stack.Screen name="Shape" component={Shape} />
+        <Stack.Screen name="FacebookReaction" component={FacebookReaction} />
       </Stack.Navigator>
     </NavigationContainer>
   );
